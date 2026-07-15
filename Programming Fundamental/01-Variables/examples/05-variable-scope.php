@@ -1,5 +1,11 @@
 <?php
 
+/*
+ scope means where a variable can be accessed and where it cannot be accessed.
+*/
+
+
+
 // ===== PHP Variable Scope =====
 
 /*
@@ -45,7 +51,7 @@ showCountry();
 echo PHP_EOL;
 
 /*
-=== Example 4 $GLOBALS/Global Keyword ===
+=== Example 4 $GLOBALS===
 */
 
 $university = "City University";
@@ -54,3 +60,23 @@ function showUniversity()
   echo $GLOBALS['university'].PHP_EOL;
 }
 showUniversity();
+
+/*  example -1
+$name = "Sohug"; ..global variable. cause it's outside the function.
+
+can't see global variable inside the function. 
+So, echo $name;--error
+
+
+example-2
+$department- local variable. it's work inside the functon student().
+
+outside function- echo $department;  it's error
+
+
+example-3
+global $country;- global variable inside the function.
+
+example-4
+$GLOBALS['university'] - php special array.  here all global variable.
+*/
