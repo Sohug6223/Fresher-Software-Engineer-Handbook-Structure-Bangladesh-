@@ -22,3 +22,11 @@ function add(int $a, int $b)
 echo "Example 1".PHP_EOL;
 echo add(10,20).PHP_EOL;
 echo PHP_EOL;
+
+// Example 2 wrong data type
+// echo "Example 2".PHP_EOL;
+// echo add("10","20"); //error
+
+/*
+
+*/
