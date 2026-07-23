@@ -107,7 +107,8 @@ do {
 
 } while ($i <= 5);
 
-echo PHP_EOL;
+echo PHP_EOL;  
+//output.. current value = 10
 
 
 
