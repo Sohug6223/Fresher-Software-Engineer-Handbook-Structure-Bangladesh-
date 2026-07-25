@@ -45,13 +45,13 @@
  * * * * *
 
 
- Task 9
+ Task 8
  Create a function that prints the current date.
 
  Hint:
  date("Y-m-d")
 
- Task 10
+ Task 9
  Create a function that prints the current time.
 
  Hint:
@@ -64,7 +64,7 @@
 // Task 1
 function greet()
 {
-  echo "Hello,PHP!".PHP_EOL;
+  echo "Hello, PHP!".PHP_EOL;
 }
 echo "Task 1".PHP_EOL;
 greet();
@@ -112,6 +112,7 @@ function printStar()
   echo PHP_EOL;
 }
 echo "Task 5".PHP_EOL;
+printStar();
 
 //Task 6
 
@@ -123,7 +124,7 @@ function printSquare(){
     echo PHP_EOL;
   }
 }
-echo "Task6".PHP_EOL;
+echo "Task 6".PHP_EOL;
 printSquare();
 
 //Task 7

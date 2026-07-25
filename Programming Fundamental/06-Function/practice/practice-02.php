@@ -55,29 +55,12 @@
 
  Pass Marks: 40
 
+
  Task 8
- Create a function that takes age
- and returns "Eligible" or "Not Eligible".
-
- Eligibility Age: 18
-
- Task 9
- Create a function that takes a cart total
- and returns the shipping charge.
-
- Rules:
-
- Cart Total >= 3000
- Shipping = 0
-
- Otherwise
- Shipping = 60
-
- Task 10
  Create a function that takes basic salary
  and bonus and returns the total salary.
 
- Task 11
+ Task 9
  Create a function that takes three numbers
  and returns the largest number.
 
@@ -101,4 +84,63 @@ function studentInfo($name,$department)
 }
 
 echo "Task 2".PHP_EOL;
-studentinfo("Sohug", "CSE");
+studentInfo("Sohug", "CSE");
+
+// Task 3
+
+function circleArea($radius)
+{
+  return 3.1416 * $radius * $radius;
+}
+echo "Task 3".PHP_EOL;
+echo circleArea(5).PHP_EOL;
+
+// Task 4
+function checkEvenOdd($number)
+{
+    return ($number % 2 == 0)? "Even" : "Odd";
+}
+echo "Task 4".PHP_EOL;
+echo checkEvenOdd(5).PHP_EOL;
+
+// Task 5
+function square($number)
+{
+    return $number * $number;
+}
+echo "Task 5".PHP_EOL;
+echo square(7).PHP_EOL;
+
+//Task 6
+function cube($number)
+{
+    return $number * $number * $number;
+}
+echo "Task 6".PHP_EOL;
+echo cube(3).PHP_EOL;
+
+// Task 7
+function checkMark($marks)
+{
+  return($marks>=40)? "Pass" : "Fail";
+}
+echo "Task 7".PHP_EOL;
+echo "Result: ". checkMark(43).PHP_EOL;
+
+// Task 8
+
+function totalSalary($basicSalary, $bonus)
+{
+    return $basicSalary + $bonus;
+}
+echo "Task 8".PHP_EOL;
+echo "Total: ". totalSalary(250000,4000).PHP_EOL;
+
+// Task 9
+
+function getLargestNumber($num1, $num2, $num3)
+{
+    return max($num1, $num2, $num3);
+}
+echo "Task 9".PHP_EOL;
+echo "Largest Number: " . getLargestNumber(10, 25, 15);
