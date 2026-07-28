@@ -382,9 +382,54 @@ echo "Complete this task after finishing the Arrays chapter." . PHP_EOL;
 
 echo PHP_EOL;
 
+function maximumValue(array $numbers, int $index = 0)
+{
+    if ($index == count($numbers) - 1) {
+        return $numbers[$index];
+    }
+
+    $maximum = maximumValue($numbers, $index + 1);
+
+    if ($numbers[$index] > $maximum) {
+        return $numbers[$index];
+    }
+
+    return $maximum;
+}
+
+echo "Task 14" . PHP_EOL;
+
+$numbers = [25, 80, 15, 60, 40];
+
+echo maximumValue($numbers) . PHP_EOL;
+
+echo PHP_EOL;
+
+
 // Task 15
 
 echo "Task 15" . PHP_EOL;
 echo "Complete this task after finishing the Arrays chapter." . PHP_EOL;
+
+echo PHP_EOL;
+
+function minimumValue(array $numbers, int $index = 0)
+{
+    if ($index == count($numbers) - 1) {
+        return $numbers[$index];
+    }
+
+    $minimum = minimumValue($numbers, $index + 1);
+
+    if ($numbers[$index] < $minimum) {
+        return $numbers[$index];
+    }
+
+    return $minimum;
+}
+
+echo "Task 15" . PHP_EOL;
+
+echo minimumValue($numbers) . PHP_EOL;
 
 echo PHP_EOL;

@@ -81,7 +81,40 @@ echo PHP_EOL;
 
 echo "Example 7" . PHP_EOL;
 
-// Example 7: Array Functions
+// Example 7: Array Functions (After Completing Array)
 
-echo "Array functions will be covered in the Arrays chapter." . PHP_EOL;
-echo "Examples: count(), sort(), array_push(), array_pop()" . PHP_EOL;
+
+$numbers = [10, 30, 20, 50, 40];
+
+echo "Count   : " . count($numbers) . PHP_EOL;
+echo "Maximum : " . max($numbers) . PHP_EOL;
+echo "Minimum : " . min($numbers) . PHP_EOL;
+echo "Total   : " . array_sum($numbers) . PHP_EOL;
+
+sort($numbers);
+
+echo "Sorted Array" . PHP_EOL;
+
+print_r($numbers);
+
+echo PHP_EOL;
+
+// Example 8 - string search
+
+echo "Example 8" . PHP_EOL;
+
+$text = "Hello PHP";
+
+echo strpos($text, "PHP") . PHP_EOL;
+echo str_replace("PHP", "Laravel", $text) . PHP_EOL;
+
+echo PHP_EOL;
+
+// Example 9 -> Formatting
+echo "Example 9" . PHP_EOL;
+
+$price = 12345.678;
+
+echo number_format($price, 2) . PHP_EOL;
+
+echo PHP_EOL;
