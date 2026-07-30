@@ -103,7 +103,7 @@ In this chapter, you will learn:
 .Array
 .Object
 .NULL
-.Resource
+.Resource -> is a special data type used to store references to external resources like file handle or database connection
 .var_dump()
 .gettype()
 .Type Casting

@@ -3,8 +3,7 @@
 /*
 
  String Functions
-
-
+ 
  PHP provides many built-in functions
  to manipulate strings.
 
@@ -21,7 +20,6 @@ echo "Length : " . strlen($text) . PHP_EOL;
 
 echo PHP_EOL;
 
-//-----------------------------------------------------
 
 echo "Example 2" . PHP_EOL;
 
@@ -33,7 +31,6 @@ echo strtoupper($text) . PHP_EOL;
 
 echo PHP_EOL;
 
-//-----------------------------------------------------
 
 echo "Example 3" . PHP_EOL;
 
@@ -45,11 +42,11 @@ echo strtolower($text) . PHP_EOL;
 
 echo PHP_EOL;
 
-//-----------------------------------------------------
+
 
 echo "Example 4" . PHP_EOL;
 
-// ucfirst()
+// ucfirst() -> Capitalize first letter
 
 $text = "php";
 
@@ -57,11 +54,10 @@ echo ucfirst($text) . PHP_EOL;
 
 echo PHP_EOL;
 
-//-----------------------------------------------------
 
 echo "Example 5" . PHP_EOL;
 
-// ucwords()
+// ucwords() -> Capitalize first letter of each word
 
 $text = "welcome to php programming";
 
@@ -69,11 +65,10 @@ echo ucwords($text) . PHP_EOL;
 
 echo PHP_EOL;
 
-//-----------------------------------------------------
 
 echo "Example 6" . PHP_EOL;
 
-// trim()
+// trim() -> Remove spaces from both sides
 
 $text = "   Hello PHP   ";
 
@@ -81,11 +76,10 @@ echo "[" . trim($text) . "]" . PHP_EOL;
 
 echo PHP_EOL;
 
-//-----------------------------------------------------
 
 echo "Example 7" . PHP_EOL;
 
-// ltrim()
+// ltrim() -> Remove spaces from the left
 
 $text = "    PHP";
 
@@ -93,11 +87,10 @@ echo "[" . ltrim($text) . "]" . PHP_EOL;
 
 echo PHP_EOL;
 
-//-----------------------------------------------------
 
 echo "Example 8" . PHP_EOL;
 
-// rtrim()
+// rtrim() -> Remove spaces from the right
 
 $text = "PHP     ";
 
@@ -105,7 +98,6 @@ echo "[" . rtrim($text) . "]" . PHP_EOL;
 
 echo PHP_EOL;
 
-//-----------------------------------------------------
 
 echo "Example 9" . PHP_EOL;
 
@@ -117,7 +109,6 @@ echo str_word_count($text) . PHP_EOL;
 
 echo PHP_EOL;
 
-//-----------------------------------------------------
 
 echo "Example 10" . PHP_EOL;
 

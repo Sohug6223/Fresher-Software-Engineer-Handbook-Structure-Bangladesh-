@@ -28,9 +28,17 @@ Without variables, storing and using these values would be impossible.
 
 Variables are one of the most fundamental concepts in programming.
 
+// js variable
 let age = 25;          // পরে age বদলানো যাবে
 const name = "Sohug";   // name আর বদলানো যাবে না
 var city = "Dhaka";    // পুরনো পদ্ধতি — নতুন কোডে ব্যবহার করবে না
+
+// PHP variable
+$name = "Sohug";
+$age = 23;
+$cgpa = 3.85;
+
+Note : PHP variable always start with $ symbol.
 ---
 
 ##  Real Life Example

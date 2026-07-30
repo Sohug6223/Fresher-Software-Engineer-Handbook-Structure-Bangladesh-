@@ -104,7 +104,9 @@ PHP provides several ways to make decisions.
 - switch
 - match (PHP 8+)
 - Ternary Operator
-- Null Coalescing Operator
+- Null Coalescing Operator(??)
+- Null Coalescing Assignment (??=)
+
 
 ---
 
@@ -176,14 +178,27 @@ Uses:
 
 ---
 
+### Null Coalescing Assignment (??=)
+
+Assigns a value only if the variable is `null`.
+
+Introduced in PHP 7.4.
+
+Useful for setting default values.
+
+---
+
 ## Best Practices
 
 - Write clear conditions.
 - Keep nesting as low as possible.
 - Use meaningful variable names.
-- Prefer switch or match when checking many fixed values.
+- Prefer `switch` or `match` when checking many fixed values.
 - Use Ternary only for simple conditions.
-- Avoid unnecessary else blocks.
+- Prefer `===` over `==` whenever possible.
+- Keep conditions readable by using parentheses when needed.
+- Extract complex conditions into variables or functions.
+- Avoid unnecessary `else` blocks.
 
 ---
 
@@ -207,6 +222,10 @@ Uses:
 - What is the difference between == and === inside conditions?
 - When should you use Ternary Operator?
 - What is Short-hand if?
+- What is the Null Coalescing Operator (`??`)?
+- What is the Null Coalescing Assignment Operator (`??=`)?
+- When should you use `match` instead of `switch`?
+- Can `switch` compare ranges (e.g., marks > 80)?
 
 ---
 

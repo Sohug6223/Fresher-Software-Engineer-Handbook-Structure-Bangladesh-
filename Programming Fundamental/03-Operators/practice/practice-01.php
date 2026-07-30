@@ -78,3 +78,35 @@ $percentage = ($obtainedMarks / $totalMarks) * 100;
 echo "Task 3" . PHP_EOL;
 
 echo "Percentage : $percentage%" . PHP_EOL;
+
+// === , !==
+$a = 10;
+$b = "10";
+
+var_dump($a == $b);   // true
+var_dump($a === $b);  // false
+echo PHP_EOL;
+
+
+$name = "PHP";
+
+if ($name === "PHP") {
+    echo "Matched";
+}
+
+echo PHP_EOL;
+
+$a = 10;
+$b = "10";
+
+var_dump($a !== $b);
+
+echo PHP_EOL;
+
+// <=>
+
+echo 5 <=> 10;   // -1
+echo 10 <=> 5;   // 1
+echo 5 <=> 5;    // 0
+
+
