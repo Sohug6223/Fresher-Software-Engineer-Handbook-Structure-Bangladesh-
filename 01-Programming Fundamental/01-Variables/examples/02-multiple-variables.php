@@ -10,7 +10,7 @@ $cgpa = 3.85;
 
 // Method 1: Print each variable separately
 
-echo "===== Method 1 =====";
+echo "Method 1";
 echo PHP_EOL;
 
 echo $name;
@@ -33,7 +33,7 @@ echo PHP_EOL;
 
 // Method 2: String Concatenation
 
-echo "==== Method 2 ====";
+echo "Method 2";
 echo PHP_EOL;
 
 echo "Name: $name" . PHP_EOL; //Use ".(dot)" for add String (Name) and Variable (name) together
@@ -47,7 +47,7 @@ echo PHP_EOL;
 
 // Method 3: Variable Interpolation
 
-echo "===== Method 3 =====";
+echo "Method 3";
 echo PHP_EOL;
 
 echo "Name: $name" . PHP_EOL; //varriable in double quotes("")
